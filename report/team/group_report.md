@@ -148,7 +148,7 @@ HIỆN TẠI — ước lượng 20 phút/lần nhận bài, chưa bấm giờ
 
 ```text
 TƯƠNG LAI — mục tiêu 7,5 phút/lần, chưa đo
-[1 Chọn tài liệu + xác định phần mình làm: 1,5'] ← CON NGƯỜI
+[1 Tải tài liệu về : 1,5'] ← CON NGƯỜI
 → [2 Kiểm file đọc được, gắn mã nguồn/vị trí: 0,5'] ← RULE
 → [3 Trích nháp yêu cầu kèm nguồn: 1'] ← AI
 → [4 Mở nguồn, đối chiếu rubric và sửa checklist: 3,5'] ← CON NGƯỜI; BOTTLENECK DỰ KIẾN
@@ -191,18 +191,26 @@ Yêu cầu mâu thuẫn → đánh dấu chờ xác nhận, hỏi người phụ
 
 ## 5. Problem Statement v0 (CP5)
 
+**Bản mô tả v0:** Khi bắt đầu phần báo cáo cá nhân của bài tập nhóm có nhiều tài liệu hướng dẫn, sinh viên phải tìm và đối chiếu yêu cầu giữa đề bài, mẫu, rubric và hướng dẫn nộp trước khi viết. Quy trình hiện tại mất khoảng 20 phút/lần theo ước lượng trong Card #2 của Lý Thành Lập; bước đối chiếu chiếm khoảng 9 phút. Bài toán cần giải là giảm thời gian tạo checklist đúng và đủ yêu cầu áp dụng cho phần cá nhân, đồng thời giữ khả năng kiểm tra từng yêu cầu từ tài liệu gốc. Mục tiêu thử nghiệm là dưới 8 phút/lần, không bỏ sót yêu cầu quan trọng; chưa có số đo xác nhận hiệu quả hay kết luận cần dùng AI.
+
 | Trường | Nội dung |
 |---|---|
-| **Actor** | |
-| **Quy trình** | |
-| **Bottleneck** | |
-| **Impact** | |
-| **Success Metric** (baseline → target, cách đo) | |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | |
+| **Actor** | Sinh viên phụ trách phần báo cáo cá nhân trong một bài tập nhóm, vừa nhận bộ tài liệu và chưa xác định đủ yêu cầu cho phần mình làm. Người phụ trách/reviewer hỗ trợ xác nhận yêu cầu còn mơ hồ. |
+| **Quy trình** | Xem danh sách tài liệu (3 phút) → tìm mục liên quan (5 phút) → đối chiếu đề, mẫu, rubric và hướng dẫn nộp (9 phút) → ghi checklist trước khi viết (3 phút). Đầu ra gồm yêu cầu, đầu việc/tiêu chí hoàn thành, nguồn và trạng thái xác nhận. Các thời gian là ước lượng từ CP2, chưa bấm giờ. |
+| **Bottleneck** | Bước 3 — đối chiếu yêu cầu nằm ở nhiều file, ước lượng 9/20 phút mỗi lần: phân biệt phần cá nhân/nhóm, yêu cầu bắt buộc/nội dung ví dụ và phát hiện điểm chưa thống nhất. Cần đo từng bước để xác nhận đây là bước nghẽn thực tế. |
+| **Impact** | Tốn khoảng 20 phút chuẩn bị trước khi bắt đầu viết theo ước lượng cá nhân; có nguy cơ bỏ sót yêu cầu, hỏi lại hoặc sửa nội dung sau khi đã làm. Chưa có số lần làm lại, mức ảnh hưởng điểm hay số người gặp để suy rộng cho cả lớp. |
+| **Success Metric** (baseline → target, cách đo) | Tốc độ: baseline tạm thời 20 phút/lần → dưới 8 phút/lần; phương án phần 4 đặt mục tiêu 7,5 phút. Đo từ mở bộ tài liệu đến khi checklist được kiểm xong, gồm chọn file, chờ công cụ và rà soát. Chất lượng: 0 yêu cầu quan trọng bị bỏ sót, 0 yêu cầu không có căn cứ được duyệt và mọi mục đã duyệt truy lại được nguồn. Reviewer lập danh sách chuẩn từ toàn bộ tài liệu, đánh dấu yêu cầu quan trọng trước khi đánh giá; đối chiếu checklist với danh sách này. So sánh quy trình cũ, checklist thủ công có link và phương án có AI trên các bộ tài liệu tương đương; ghi số file, độ dài và mức quen thuộc. Mục tiêu chưa phải kết quả đã đạt. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Phạm vi là tìm yêu cầu và lập checklist, không viết hoặc nộp báo cáo thay sinh viên. Nếu thử AI, chỉ dùng tài liệu được cung cấp, không bịa quy định, không coi ví dụ là yêu cầu bắt buộc, không tự quyết nguồn ưu tiên hoặc xóa điểm mâu thuẫn. Nháp phải có đoạn/vị trí nguồn; thiếu file, thiếu nguồn hoặc yêu cầu chưa rõ phải được đánh dấu. Sinh viên mở nguồn kiểm cả tính đúng lẫn tính đầy đủ trước khi duyệt checklist; mâu thuẫn cần hỏi người phụ trách. Khi nháp sai hoặc rà soát không hiệu quả, quay về tìm kiếm và checklist thủ công. |
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+**Phản biện từ AI và cách bản nháp đã điều chỉnh:** Các góp ý dưới đây do AI đưa ra khi rà soát; chưa ghi nhận phản biện từ nhóm khác hoặc ý kiến đồng ý của nhóm. Nhóm cần tự chốt bản v0 trước khi dùng cho CP6.
 
--
+| Phản biện | Điều chỉnh trong v0 | Trạng thái ý kiến nhóm |
+|---|---|---|
+| Ước lượng 20 phút và bước nghẽn 9 phút chưa phải baseline đo thực tế | Giữ nhãn ước lượng, nêu cách bấm giờ và không khẳng định đã tiết kiệm thời gian | Chưa ghi nhận |
+| Checklist tạo nhanh nhưng thiếu yêu cầu vẫn có thể làm bài sai | Bổ sung 0 yêu cầu quan trọng bị bỏ sót, 0 mục vô căn cứ được duyệt và đối chiếu với danh sách chuẩn độc lập | Chưa ghi nhận |
+| Chỉ kiểm các mục AI trích ra sẽ không tìm được những mục AI bỏ sót | Yêu cầu người học rà soát rubric/hướng dẫn nộp độc lập; reviewer đối chiếu toàn bộ tài liệu | Chưa ghi nhận |
+| Có thể chỉ cần checklist có link, chưa cần AI | Đưa phương án thủ công vào so sánh; chưa chọn mức can thiệp AI tại v0 | Chưa ghi nhận |
+| Dùng lại cùng bài để thử sẽ có lợi thế do người học đã nhớ yêu cầu | So sánh bộ tài liệu tương đương và ghi mức quen thuộc; không coi lượt làm lại bài đã biết là bằng chứng duy nhất | Chưa ghi nhận |
 
 ---
 
