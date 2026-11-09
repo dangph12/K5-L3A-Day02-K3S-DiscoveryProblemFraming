@@ -3,7 +3,7 @@
 ## Thông tin nhóm
 
 - Tên nhóm: K3S
-- Candidate problem nhóm chọn (1 câu):
+- Candidate problem nhóm chọn (1 câu): Tìm đúng và yêu cầu trong nhiều file hướng dẫn trong lab repo
 - Quyết định cuối (Go / Not Yet / No-Go):
 
 ## Thành viên
@@ -11,8 +11,8 @@
 | STT | Họ và tên      | MSSV        | Vai trò trong nhóm            | Tài khoản GitHub                 |
 | --: | -------------- | ----------- | ----------------------------- | -------------------------------- |
 |   1 | Phan Hải Đăng  | 2A202603409 | điều phối thời gian, ghi chép | https://github.com/dangph12      |
-|   2 | Trần Việt Tiến | 2A202603394 |                               | https://github.com/chuvoicon-cpu |
-|   3 | Lý Thành Lập   | 2A202603414 |                               | https://github.com/lythanhlap    |
+|   2 | Trần Việt Tiến | 2A202603394 | vẽ quy trình                  | https://github.com/chuvoicon-cpu |
+|   3 | Lý Thành Lập   | 2A202603414 | phụ trách research            | https://github.com/lythanhlap    |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
@@ -20,15 +20,15 @@ Gợi ý vai trò (một người có thể giữ nhiều vai): điều phối t
 
 ## Phân công theo checkpoint
 
-| Checkpoint                                 | Người chính   | Người hỗ trợ | Sản phẩm                                       |
-| ------------------------------------------ | ------------- | ------------ | ---------------------------------------------- |
-| CP3 — Hội tụ nhóm                          | Phan Hải Đăng |              | Cluster, cây OST, bảng chấm điểm               |
-| CP4 — Kiểm chứng                           |               |              | Assumption map, snapshot hoặc survey           |
-| CP4 — Research                             |               |              | Bảng research có link                          |
-| CP5 — Quy trình trước/sau                  |               |              | Quy trình + bảng before/after                  |
-| CP5 — Problem Statement v0                 |               |              | Problem Statement v0                           |
-| CP6 — Mức can thiệp + Problem Statement v1 |               |              | Ma trận, AI Canvas, eval, Problem Statement v1 |
-| CP6 — Quyết định                           | Phan Hải Đăng |              | 4 rủi ro + Go/Not Yet/No-Go                    |
+| Checkpoint                                 | Người chính    | Người hỗ trợ  | Sản phẩm                                       |
+| ------------------------------------------ | -------------- | ------------- | ---------------------------------------------- |
+| CP3 — Hội tụ nhóm                          | Phan Hải Đăng  |               | Cluster, cây OST, bảng chấm điểm               |
+| CP4 — Kiểm chứng                           | Lý Thành Lập   |               | Assumption map, snapshot hoặc survey           |
+| CP4 — Research                             | Lý Thành Lập   |               | Bảng research có link                          |
+| CP5 — Quy trình trước/sau                  | Trần Việt Tiến | Lý Thành Lập  | Quy trình + bảng before/after                  |
+| CP5 — Problem Statement v0                 | Trần Việt Tiến | Phan Hải Đăng | Problem Statement v0                           |
+| CP6 — Mức can thiệp + Problem Statement v1 | Phan Hải Đăng  |               | Ma trận, AI Canvas, eval, Problem Statement v1 |
+| CP6 — Quyết định                           | Lý Thành Lập   |               | 4 rủi ro + Go/Not Yet/No-Go                    |
 
 ## Cá nhân
 
