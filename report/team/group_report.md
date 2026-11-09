@@ -124,10 +124,6 @@ Tổng hợp:
 
 ## 4. Quy trình trước/sau (CP5)
 
-Phạm vi: **Tìm đúng yêu cầu trong nhiều tài liệu**, theo [Problem Card #2, CP2 của Lý Thành Lập](../individual/2A202603414_LyThanhLap.md). Actor là sinh viên phụ trách báo cáo cá nhân trong bài tập nhóm. Đầu vào gồm đề bài, mẫu, rubric và hướng dẫn nộp; đầu ra là checklist yêu cầu áp dụng cho phần mình làm, kèm vị trí nguồn để kiểm tra.
-
-Thời gian hiện tại lấy nguyên ước lượng trong card cá nhân, chưa bấm giờ. Quy trình tương lai và thời gian sau là đề xuất thử nghiệm; chưa có kết quả kiểm chứng ở CP4 để kết luận cần dùng AI.
-
 ### 4.1. Quy trình hiện tại
 
 ```text
