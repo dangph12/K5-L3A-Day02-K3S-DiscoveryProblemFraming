@@ -171,18 +171,28 @@ Tổng thời gian: chưa xác định. Tần suất: trung bình 3 ngày/tuần
 Trả lời bằng trải nghiệm thật của bạn, tối thiểu 200 từ cho các câu 6.1–6.6 (không tính 6.7, câu này được chấm riêng ở tiêu chí C5). **Không dùng AI để viết thay.**
 
 **6.1. Tôi học được gì khi nghe top 3 problems của các bạn khác?**
+Từ top 3 problems của các bạn khác, tôi đã nhận ra được tầm quan trọng của việc có cách thức tính toán thời gian impact chính xác cũng như cần thiết phải lượng hoá các success metric.
 
 **6.2. Nhóm có lúc nào bị "solution-first" (nghĩ giải pháp trước khi hiểu vấn đề) không? Lúc đó nhóm nhận ra và xử lý thế nào?**
+Nhóm không bị "solution-first" bởi vì đã ứng dụng các lí thuyết trên lớp một cách hiệu quả thông qua những lỗi đã gặp phải ở bài mini lab trước đó
 
 **6.3. Tôi có đổi ý sau khi bị phản biện không? Kể một lần cụ thể.**
+Tôi đã nhìn nhận lại vấn đề mà mình tự tin và tìm hiểu kĩ nhất sau khi bị phản biện lại về vấn đề lượng hoá success metric.
 
 **6.4. Kết quả kiểm chứng (phỏng vấn/survey/research) có làm tôi bất ngờ không? Điều gì?**
+Kết quả kiểm chứng không khiến tôi bất ngờ bởi vì vấn đề nhóm chọn để giải quyết đã được nhiều bạn trong lớp phản ánh trước đó. Việc thực hiện bài lab này đã củng cố cho giả thuyết của nhóm trở nên chặt chẽ hơn.
 
 **6.5. Điều khó nhất khi viết Problem Statement là gì?**
+Việc khó khăn nhất khi viết problem statement là chuẩn hoá mục tiêu cho vấn đề của mình đề ra. Việc chuẩn hoá mục tiêu giúp cả nhóm xác định được thời gian impact và success metric một cách hiệu quả.
 
 **6.6. Nếu làm lại, tôi sẽ đổi gì? Tôi sẽ phản biện nhóm mạnh hơn ở điểm nào?**
+Nếu làm lại, tôi sẽ giữ ý tưởng nhưng sẽ đổi lại cách thức tính toán success metric
 
 **6.7. Hiểu bài:** giải thích bằng 5–8 câu, không nhìn tài liệu, chuỗi _problem → quy trình → metric → boundary → mức can thiệp AI → quyết định_ của bài nhóm mình.
+Vấn đề hiện tại: trong bài lab có quá nhiều file hướng dẫn, dẫn đến việc học sinh bị "loạn".
+Quy trình hiện tại là người học đọc từng file hướng dẫn một để tự làm một checklist riêng để xác định mình đã làm xong hay chưa.
+Mức độ can thiệp của AI là chỉ tạo ra checklist, không đưa ra tổng hợp hay nhận xét gì thêm, không làm bài hộ người học.
+Quyết định: Not yet
 
 ---
 
