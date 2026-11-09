@@ -124,66 +124,72 @@ Tổng hợp:
 
 ## 4. Quy trình trước/sau (CP5)
 
-Phạm vi: **theo dõi hạn nộp bài tập từ LMS và hai nhóm chat**, dựa trên [Problem Card #1, CP2 của Lý Thành Lập](../individual/2A202603414_LyThanhLap.md). Đơn vị so sánh là một lần rà soát việc cần làm trên cùng ba nguồn. Thời gian hiện tại là ước lượng từ card, chưa bấm giờ; phương án tương lai và thời gian kỳ vọng là đề xuất để kiểm chứng, chưa phải kết quả triển khai hoặc quyết định CP6.
+Phạm vi: **Tìm đúng yêu cầu trong nhiều tài liệu**, theo [Problem Card #2, CP2 của Lý Thành Lập](../individual/2A202603414_LyThanhLap.md). Actor là sinh viên phụ trách báo cáo cá nhân trong bài tập nhóm. Đầu vào gồm đề bài, mẫu, rubric và hướng dẫn nộp; đầu ra là checklist yêu cầu áp dụng cho phần mình làm, kèm vị trí nguồn để kiểm tra.
+
+Thời gian hiện tại lấy nguyên ước lượng trong card cá nhân, chưa bấm giờ. Quy trình tương lai và thời gian sau là đề xuất thử nghiệm; chưa có kết quả kiểm chứng ở CP4 để kết luận cần dùng AI.
 
 ### 4.1. Quy trình hiện tại
 
 ```text
-HIỆN TẠI — ước lượng 15 phút/lần, chưa bấm giờ
-[1 Mở LMS: 4'] → [2 Đọc hai nhóm chat: 5'] ← BOTTLENECK
-→ [3 Gom việc và hạn nộp: 4'] → [4 Sắp thứ tự ưu tiên: 2']
+HIỆN TẠI — ước lượng 20 phút/lần nhận bài, chưa bấm giờ
+[1 Xem danh sách tài liệu: 3'] → [2 Tìm mục liên quan: 5']
+→ [3 Đối chiếu yêu cầu giữa các file: 9'] ← BOTTLENECK
+→ [4 Ghi checklist để bắt đầu viết: 3']
 ```
 
 | Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
 |---:|---|---|---|---|---|
-| 1 | Sinh viên | Thông báo và danh sách bài trên LMS | Các bài tập và hạn nộp tìm được trên LMS | Ước lượng 4 phút/lần rà soát; tần suất chưa xác nhận | Mở từng môn liên quan, ghi lại nguồn |
-| 2 | Sinh viên | Tin nhắn trong hai nhóm chat | Thông báo bài tập, thay đổi hạn hoặc yêu cầu mới | Ước lượng 5 phút/lần rà soát | Phân biệt thông báo cần làm với trao đổi khác; bottleneck chính |
-| 3 | Sinh viên | Thông tin từ bước 1–2 | Ghi chú tên việc, hạn nộp và nguồn | Ước lượng 4 phút/lần rà soát | Đối chiếu thông tin khác nhau, tránh ghi trùng; hỏi lại nếu chưa rõ |
-| 4 | Sinh viên | Danh sách việc và hạn đã ghi | Thứ tự việc cần làm | Ước lượng 2 phút/lần rà soát | Cân nhắc độ gấp, khối lượng và việc nhóm phụ thuộc |
+| 1 | Sinh viên | Đề bài và danh sách file được cung cấp | Danh sách tài liệu cần đọc | Ước lượng 3 phút/lần nhận bài nhiều tài liệu | Nhận diện đề, mẫu, rubric và hướng dẫn nộp |
+| 2 | Sinh viên | Các file và phần việc cá nhân được giao | Các đoạn có thể liên quan đến phần mình làm | Ước lượng 5 phút/lần | Mở và tìm từng mục, ghi vị trí để quay lại |
+| 3 | Sinh viên | Các đoạn yêu cầu tìm được ở bước 2 | Các yêu cầu áp dụng, điểm trùng và điểm chưa rõ | Ước lượng 9 phút/lần | Bottleneck: đối chiếu nội dung giữa nhiều file; không tự suy đoán khi các nguồn mâu thuẫn |
+| 4 | Sinh viên | Yêu cầu đã đối chiếu | Checklist để bắt đầu viết báo cáo cá nhân | Ước lượng 3 phút/lần | Ghi đầu ra cần có, điều kiện nộp và nguồn đối chiếu |
 
-**Bottleneck chính:** Bước 2 — đọc lại hai nhóm chat để tìm thông báo và phân biệt hạn cũ với cập nhật mới, ước lượng 5/15 phút. Đây là bước nghẽn được nêu trong card cá nhân; cần bấm giờ từng bước để xác nhận. Bước 3 cũng tốn 4 phút vì phải gom lại thông tin từ nhiều nguồn.
+**Bottleneck chính:** Bước 3 chiếm 9/20 phút theo ước lượng của card. Người học phải phân biệt yêu cầu cho cá nhân/nhóm, tìm điều kiện nằm ở rubric hoặc hướng dẫn nộp, và kiểm tra phần nào của bài mẫu chỉ dùng để tham khảo. Thời gian và nguyên nhân nghẽn cần được xác nhận bằng quan sát thực tế.
 
 ### 4.2. Quy trình tương lai
 
-**Phương án ưu tiên thử:** một bảng việc chung có tên môn, tên bài, hạn nộp, link thông báo, thời điểm cập nhật, trạng thái và người xác nhận. Sinh viên ghi/cập nhật việc khi đọc thông báo; bảng dùng quy tắc để sắp theo hạn và tạo nhắc việc. Không giả định đã có API hoặc quyền tự động đọc LMS/nhóm chat. Phương án này chưa dùng AI.
+**Phương án cần thử trước:** checklist thủ công có link đến từng mục nguồn, kết hợp tìm kiếm trong file. Nếu cách này đủ đạt thời gian và chất lượng mong muốn, giữ No AI. Quy trình có AI dưới đây là phương án Workflow đề xuất trong Card #2 để so sánh; các bước được định sẵn, người học vẫn xác nhận checklist.
 
 ```text
-TƯƠNG LAI — mục tiêu dưới 5 phút/lần rà soát định kỳ
-[1 Kiểm thông báo mới trên LMS + hai nhóm chat: 2'] ← CON NGƯỜI; BOTTLENECK DỰ KIẾN
-→ [2 Cập nhật bảng, đối chiếu hạn và link nguồn: 1,5'] ← CON NGƯỜI
-→ [3 Sắp hạn + đánh dấu gần hạn + tạo nhắc: tự động] ← RULE
-→ [4 Duyệt danh sách và chọn việc cần làm: 1'] ← CON NGƯỜI
-Tổng thời gian thao tác mục tiêu: 4,5 phút/lần; chờ hệ thống ghi riêng.
-Hạn chưa rõ hoặc nguồn mâu thuẫn → hỏi người phụ trách → quay lại bước 2.
+TƯƠNG LAI — mục tiêu 7,5 phút/lần, chưa đo
+[1 Chọn tài liệu + xác định phần mình làm: 1,5'] ← CON NGƯỜI
+→ [2 Kiểm file đọc được, gắn mã nguồn/vị trí: 0,5'] ← RULE
+→ [3 Trích nháp yêu cầu kèm nguồn: 1'] ← AI
+→ [4 Mở nguồn, đối chiếu rubric và sửa checklist: 3,5'] ← CON NGƯỜI; BOTTLENECK DỰ KIẾN
+→ [5 Kiểm trường bắt buộc + lưu checklist: 0,5'] ← RULE + CON NGƯỜI xác nhận lưu
+Nguồn thiếu/không đọc được → báo thiếu, quay lại bước 1.
+Yêu cầu mâu thuẫn → đánh dấu chờ xác nhận, hỏi người phụ trách rồi kiểm lại bước 4.
 ```
 
-| Bước | Actor / mức can thiệp | Input | Output | Thời gian mục tiêu | Kiểm soát |
+| Bước | Actor / mức can thiệp | Input | Output | Thời gian mục tiêu | Kiểm soát / bàn giao |
 |---:|---|---|---|---|---|
-| 1 | Sinh viên — con người | Thông báo mới hoặc thay đổi trên ba nguồn | Những việc cần thêm/sửa và link gốc | 2 phút | Ghi mốc đã kiểm; nguồn không truy cập được phải đánh dấu để kiểm lại |
-| 2 | Sinh viên — con người | Thông báo và các việc đang có trong bảng | Bản ghi đã xác nhận, không trùng và có hạn rõ | 1,5 phút | Đổi hạn phải lưu nguồn cập nhật; không đoán ngày khi thông báo mơ hồ |
-| 3 | Bảng việc/lịch — Rule | Hạn đã xác nhận và trạng thái việc | Danh sách sắp hạn, cờ gần hạn và nhắc việc | Tự động; đo độ trễ riêng | Chỉ xử lý bản ghi đủ dữ liệu; cờ ưu tiên theo hạn không thay quyết định của sinh viên |
-| 4 | Sinh viên — con người | Danh sách đã sắp và nhắc việc | Kế hoạch làm bài, việc cần xác minh thêm | 1 phút | Xem cả việc chưa rõ hạn; kiểm lại nguồn trước khi dựa vào hạn để nộp |
+| 1 | Sinh viên — con người | Tài liệu được phép sử dụng, mô tả phần việc | Bộ tài liệu và phạm vi cần tìm | 1,5 phút | Chọn đúng phiên bản; nêu rõ làm phần cá nhân nào |
+| 2 | Công cụ — Rule | Bộ file đã chọn | Văn bản đọc được, mã file và số trang/mục | 0,5 phút | Báo file lỗi, trang không đọc được; không báo đã xử lý đầy đủ khi thiếu nội dung |
+| 3 | AI | Văn bản, phạm vi, mã nguồn và mẫu checklist | Nháp yêu cầu, loại yêu cầu, trích đoạn và vị trí nguồn | 1 phút | Phân biệt yêu cầu bắt buộc với ví dụ; đánh dấu mơ hồ/mâu thuẫn, không tự giải quyết |
+| 4 | Sinh viên — con người | Nháp, tài liệu gốc và rubric | Checklist đã sửa, nguồn đã kiểm và câu hỏi còn chờ | 3,5 phút | Kiểm mọi yêu cầu; quét độc lập rubric/hướng dẫn nộp để phát hiện cả mục AI bỏ sót, không chỉ kiểm các mục AI đã trích |
+| 5 | Công cụ — Rule; sinh viên duyệt lưu | Checklist sau rà soát | Bản checklist có trạng thái xác nhận và link nguồn | 0,5 phút | Rule kiểm ô bắt buộc/trùng lặp; người học quyết định nội dung đủ để bắt đầu viết |
 
-**Điều kiện để thử mục tiêu:** Bảng được tạo và dữ liệu ban đầu được nhập một lần. Lần đầu vẫn phải quét đầy đủ nguồn; chi phí tạo bảng, nhập ban đầu và cấu hình nhắc việc ghi riêng. Mọi thời gian ghi việc ngay khi nhận thông báo cũng phải cộng vào tổng thời gian duy trì trong tuần, tránh chỉ chuyển thao tác ra ngoài lần rà soát. Nếu có nhiều thông báo mới, chưa kỳ vọng giữ được 4,5 phút.
+**Cấu trúc checklist:** yêu cầu; áp dụng cho cá nhân/nhóm; đầu ra cần có; tiêu chí hoàn thành; tên file và trang/mục nguồn; trạng thái đã kiểm/chờ làm rõ. Mục chưa xác nhận phải hiển thị riêng, không được âm thầm bỏ khỏi danh sách.
 
-**Vai trò AI nếu cần thử thêm:** Sau khi đo phương án đơn giản, chỉ cân nhắc AI trích nháp tên bài/hạn từ đoạn thông báo được người dùng cung cấp nếu bước nhập còn là bottleneck. Nháp phải kèm nguồn và chờ người xác nhận mới chuyển sang bước Rule. Đây là nhánh thử nghiệm tùy chọn, không nằm trong 4,5 phút mục tiêu trên.
+**Boundary:** AI chỉ trích nháp trong bộ tài liệu được cung cấp, không tạo thêm quy định, không biến nội dung ví dụ thành yêu cầu bắt buộc và không tự chọn nguồn ưu tiên khi các file mâu thuẫn. Mỗi yêu cầu phải dẫn đến đoạn nguồn để sinh viên kiểm tra. Sinh viên duyệt trước khi dùng checklist để viết; các yêu cầu quan trọng về nội dung, tiêu chí chấm và điều kiện nộp phải được kiểm trực tiếp. Quy trình không viết báo cáo hay nộp bài thay người học.
 
-**Boundary:** Người học xác nhận tên bài, môn, ngày/giờ và múi giờ trước khi lưu hạn hoặc sửa hạn cũ. Rule không tự hiểu thông báo văn bản để thay đổi hạn. Nếu dùng AI, AI không tự quyết hạn còn mơ hồ, không tự ghi đè hạn đã xác nhận, không gửi tin cho nhóm và không nộp bài thay sinh viên. Nhắc việc chỉ hỗ trợ, người học vẫn chịu trách nhiệm kiểm tra thông báo chính thức.
+**Phương án quay về:** Nếu thiếu nguồn, AI trích sai hoặc không dẫn được vị trí, bỏ phần nháp đó và dùng tìm kiếm trong file + checklist thủ công. Nếu lỗi công cụ hoặc thời gian rà soát nháp không giúp ích, quay về toàn bộ quy trình hiện tại. Khi tài liệu mâu thuẫn, giữ cả các đoạn nguồn và hỏi giảng viên/người phụ trách; chỉ cập nhật checklist sau khi làm rõ.
 
-**Phương án quay về:** Nếu bảng/lịch hoặc nhắc việc lỗi, dùng ghi chú thủ công và kiểm trực tiếp cả ba nguồn theo quy trình cũ. Nếu nháp AI sai hoặc thiếu nguồn, bỏ nháp và nhập tay từ thông báo gốc. Nếu các nguồn mâu thuẫn, đánh dấu “chờ xác nhận”, hỏi giảng viên/người phụ trách và chỉ cập nhật khi đã làm rõ.
+**Điều kiện thử:** Bộ file có thể đọc được và có phiên bản xác định. Chi phí chuẩn bị công cụ/mẫu một lần ghi riêng; thời gian chọn, đọc/chuyển đổi file, chờ AI và kiểm lại đều tính trong mỗi lần thực hiện. Nếu cần OCR hay thời gian hỏi người phụ trách, ghi thêm thay vì cố ép tổng vào 7,5 phút.
 
 ### 4.3. Before / after
 
 | Chỉ số | Trước | Sau (kỳ vọng) | Ghi chú |
-|---|---:|---:|---|
-| Số bước | 4 | 4 | Giảm thao tác gom/sắp lặp lại, không lấy giảm số bước làm mục tiêu |
-| Tổng thời gian | Ước lượng 15 phút/lần | Mục tiêu 4,5 phút/lần rà soát | Chưa đo; ghi riêng chi phí ban đầu và cộng thao tác cập nhật ngoài phiên vào tổng tuần |
-| Số bước thủ công | 4/4 | 3/4 | Bước 3 do Rule xử lý; nhánh AI tùy chọn chưa được tính |
-| Bottleneck chính | Đọc hai nhóm chat: 5 phút | Dự kiến kiểm thông báo mới trên ba nguồn: 2 phút | Bảng tập trung chưa tự loại bỏ việc đọc nguồn; cần đo để xác nhận mức giảm và bottleneck thực tế |
-| Việc/hạn bị bỏ sót hoặc ghi sai | Chưa có số lượng xác nhận | Mục tiêu 0 trong 3 tuần theo dõi | Đối chiếu bảng với thông báo gốc; không chỉ đếm số lần có nhắc việc |
-| Rủi ro mới phát sinh | Thông tin rải rác, phải kiểm lại | Bảng lỗi thời, nhập sai hạn, nhắc không đến; nếu thử AI có thể trích sai | Kiểm nguồn, lưu cập nhật, kiểm tra nhắc việc và có phương án nhập tay |
+|---|---|---|---|
+| Số bước | 4 | 5 | Tăng bước kiểm soát và dẫn nguồn; không lấy số bước ít hơn làm mục tiêu |
+| Tổng thời gian | Ước lượng 20 phút/lần | Mục tiêu 7,5 phút/lần, dưới 8 phút theo card | Gồm 1,5 + 0,5 + 1 + 3,5 + 0,5; chưa có kết quả đo |
+| Số bước có thao tác con người | 4/4 | 3/5: bước 1, 4 và duyệt lưu ở 5 | Bước 5 kết hợp Rule và con người; không coi toàn bộ bước này là tự động |
+| Bottleneck chính | Đối chiếu giữa file: 9 phút | Dự kiến kiểm nguồn và sửa checklist: 3,5 phút | Giữ người học kiểm cả tính đúng và tính đầy đủ |
+| Yêu cầu quan trọng bị bỏ sót | Chưa có số lượng xác nhận | Mục tiêu 0 | Đối chiếu với danh sách chuẩn do người phụ trách/reviewer xác nhận từ toàn bộ tài liệu |
+| Khả năng truy lại nguồn | Chưa có số đo trong card | Mục tiêu mọi mục đã duyệt có nguồn kiểm được | Link/mã file và số trang/mục phải dẫn đúng nội dung |
+| Rủi ro mới phát sinh | Đọc thiếu hoặc hiểu thiếu yêu cầu | AI bịa yêu cầu, bỏ sót mục, dùng sai phiên bản hoặc trích sai nguồn | Báo thiếu file, giữ nhãn chờ xác nhận, kiểm nguồn và fallback thủ công |
 
-**Cách kiểm chứng:** Bấm giờ một số phiên theo quy trình hiện tại và phương án đề xuất trên cùng phạm vi ba nguồn; ghi số thông báo mới/thay đổi để so sánh khối lượng tương đương. Theo dõi thêm tổng thời gian duy trì mỗi tuần và mọi việc/hạn bị sai trong 3 tuần. Nếu chỉ giảm thời gian phiên rà soát nhưng tổng thời gian tuần tăng hoặc phát sinh bỏ sót, chưa kết luận phương án hiệu quả.
+**Cách kiểm chứng:** So sánh quy trình hiện tại, checklist thủ công có link và Workflow đề xuất trên các bộ tài liệu tương đương về số file/độ dài/độ khó. Ghi cả mức quen thuộc để tránh đo lại cùng bài đã nhớ yêu cầu. Bấm giờ từ mở bộ tài liệu đến khi checklist được kiểm xong; reviewer đối chiếu độc lập để đếm mục thiếu/sai và nguồn không hợp lệ. Chỉ giữ phương án AI nếu có lợi so với checklist thủ công mà vẫn đạt 0 yêu cầu quan trọng bị bỏ sót; nếu chưa đạt, ghi nhận kết quả và điều chỉnh thay vì kết luận đã cải thiện.
 
 ---
 
