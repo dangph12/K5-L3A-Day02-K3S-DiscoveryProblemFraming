@@ -8,11 +8,11 @@
 
 ## Thành viên
 
-| STT | Họ và tên | MSSV | Vai trò trong nhóm | Tài khoản GitHub |
-| --: | --------- | ---- | ------------------ | ---------------- |
-|   1 |           |      |                    |                  |
-|   2 |           |      |                    |                  |
-|   3 |           |      |                    |                  |
+| STT | Họ và tên      | MSSV        | Vai trò trong nhóm            | Tài khoản GitHub                 |
+| --: | -------------- | ----------- | ----------------------------- | -------------------------------- |
+|   1 | Phan Hải Đăng  | 2A202603409 | điều phối thời gian, ghi chép | https://github.com/dangph12      |
+|   2 | Trần Việt Tiến | 2A202603394 |                               | https://github.com/chuvoicon-cpu |
+|   3 | Lý Thành Lập   | 2A202603414 |                               | https://github.com/lythanhlap    |
 
 Không ghi email hay số điện thoại vào bảng này, vì repo có thể để public.
 
