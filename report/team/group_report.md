@@ -13,19 +13,17 @@
 
 ### 2.1. Pitch
 
-| # / Mã | Người đưa ra   | Candidate (Job Story ngắn)                                                                                                    | Actor                                                          | Bottleneck                                                                                                                    | Câu hỏi phản biện nhận được (ai hỏi)                                                                                                                                                                                                  |
-| ------ | -------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1      | Phan Hải Đăng  | Khi có đề xuất tính năng mới lúc việc cũ chưa xong, tôi muốn thống nhất ưu tiên và phạm vi để chốt kế hoạch khả thi.          | Nhóm trưởng đồ án, thành viên và mentor                        | Thảo luận giá trị và phạm vi: khoảng 120 phút trong lần đã kể; chưa biết bao nhiêu là thời gian có thể giảm.                  | Làm sao giảm thời gian thảo luận mà vẫn chốt được kế hoạch khả thi? |
-| 2      | Phan Hải Đăng  | Khi daily và task diễn giải chưa rõ, tôi muốn xác minh việc đã hoàn thành để báo cáo đúng tiến độ cho mentor.                 | Nhóm trưởng tổng hợp báo cáo                                   | Đọc code và hỏi lại qua Zalo; chưa tách thời gian. Tổng báo cáo khoảng 60 phút khi cần xác minh, so với 30 phút khi daily rõ. | Dùng mẫu daily rõ ràng đã đủ giải quyết vấn đề chưa? |
-| 3      | Phan Hải Đăng  | Khi business rule trong code thay đổi trước SRS, tôi muốn xác định đúng rule đã đổi để cập nhật tài liệu khớp sản phẩm.       | Nhóm trưởng phụ trách SRS                                      | Đọc code để xác định rule: khoảng 30 phút/lần; công việc diễn ra 3 ngày/tuần, chưa biết số lần/ngày.                          | Làm thế nào để đo lường thời gian impact trước và sau khi áp dụng AI?                                                                                                                                                                 |
-| 4      | Trần Việt Tiến | Khi chức năng báo lỗi, tôi muốn xác định nguyên nhân và cách tái hiện để sửa đúng lỗi, giảm thử sai.                          | Sinh viên/intern phát triển chức năng trong dự án đã chạy được | Nối log với code và kiểm tra giả thuyết qua nhiều vòng; chưa có số phút, bottleneck dự kiến.                                  | Bối cảnh hiện tại đang chưa rõ ràng và quá rộng, làm thế nào để thu hẹp?                                                                                                                                                              |
-| 5      | Trần Việt Tiến | Khi chuẩn bị bàn giao chức năng, tôi muốn xác định ca bình thường, biên và đầu vào không hợp lệ để giảm lỗi bỏ sót.           | Sinh viên/intern kiểm tra chức năng mình phát triển            | Liệt kê ca và kết quả mong đợi từ yêu cầu; chưa có số phút, bottleneck dự kiến.                                               | Phạm vi actor quá rộng, làm sao để xác định được?                                                                                                                                                                                     |
-| 6      | Trần Việt Tiến | Khi tra thư viện/API, tôi muốn tìm tài liệu đúng phiên bản và ngữ cảnh để áp dụng được vào chương trình.                      | Sinh viên/intern tích hợp thư viện/API                         | Đối chiếu phiên bản, cú pháp và điều kiện sử dụng; chưa có số phút, bottleneck dự kiến.                                       | Việc nào thể hiện success metric?                                                                                                                                                                                                     |
-| 7      | Lý Thành Lập   | Khi bài tập được thông báo qua LMS và chat, tôi muốn biết việc sắp đến hạn để sắp xếp thời gian và không bỏ sót.              | Sinh viên theo dõi bài tập nhiều môn                           | Đọc hai nhóm chat, phân biệt thông báo với trao đổi: ước lượng 5 phút trong tổng 15 phút/lần, chưa bấm giờ.                   | Có bằng chứng nào cho thấy sinh viên đã bỏ sót hạn nộp? |
-| 8      | Lý Thành Lập   | Khi nhận bài có nhiều file hướng dẫn, tôi muốn tìm đúng yêu cầu cho phần mình làm để bắt đầu đúng và hạn chế sửa lại.         | Sinh viên phụ trách báo cáo cá nhân trong bài tập nhóm         | Đối chiếu đề, mẫu, rubric và hướng dẫn nộp: ước lượng 9 phút trong tổng 20 phút/lần, chưa bấm giờ.                            | Làm sao xác định checklist đã đủ và đúng yêu cầu? |
-| 9      | Lý Thành Lập   | Khi thảo luận nhóm qua nhiều tin nhắn, tôi muốn tìm quyết định cuối và người phụ trách để tiếp tục làm mà không phải hỏi lại. | Thành viên nhận việc sau thảo luận nhóm                        | Phân biệt ý kiến đang bàn với quyết định đã chốt: ước lượng 6 phút trong tổng 15 phút/lần, chưa bấm giờ.                      | Bước nghẽn là tìm lại hay chưa ghi rõ quyết định cuối? |
-
-> Câu hỏi ở mục 1, 2, 7, 8, 9 là gợi ý từ AI; chưa xác nhận người hỏi thực tế.
+| # / Mã | Người đưa ra   | Candidate (Job Story ngắn)                                                                                                    | Actor                                                          | Bottleneck                                                                                                                    | Câu hỏi phản biện nhận được (ai hỏi)                                     |
+| ------ | -------------- | ----------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| 1      | Phan Hải Đăng  | Khi có đề xuất tính năng mới lúc việc cũ chưa xong, tôi muốn thống nhất ưu tiên và phạm vi để chốt kế hoạch khả thi.          | Nhóm trưởng đồ án, thành viên và mentor                        | Thảo luận giá trị và phạm vi: khoảng 120 phút trong lần đã kể; chưa biết bao nhiêu là thời gian có thể giảm.                  | Làm sao giảm thời gian thảo luận mà vẫn chốt được kế hoạch khả thi?      |
+| 2      | Phan Hải Đăng  | Khi daily và task diễn giải chưa rõ, tôi muốn xác minh việc đã hoàn thành để báo cáo đúng tiến độ cho mentor.                 | Nhóm trưởng tổng hợp báo cáo                                   | Đọc code và hỏi lại qua Zalo; chưa tách thời gian. Tổng báo cáo khoảng 60 phút khi cần xác minh, so với 30 phút khi daily rõ. | Dùng mẫu daily rõ ràng đã đủ giải quyết vấn đề chưa?                     |
+| 3      | Phan Hải Đăng  | Khi business rule trong code thay đổi trước SRS, tôi muốn xác định đúng rule đã đổi để cập nhật tài liệu khớp sản phẩm.       | Nhóm trưởng phụ trách SRS                                      | Đọc code để xác định rule: khoảng 30 phút/lần; công việc diễn ra 3 ngày/tuần, chưa biết số lần/ngày.                          | Làm thế nào để đo lường thời gian impact trước và sau khi áp dụng AI?    |
+| 4      | Trần Việt Tiến | Khi chức năng báo lỗi, tôi muốn xác định nguyên nhân và cách tái hiện để sửa đúng lỗi, giảm thử sai.                          | Sinh viên/intern phát triển chức năng trong dự án đã chạy được | Nối log với code và kiểm tra giả thuyết qua nhiều vòng; chưa có số phút, bottleneck dự kiến.                                  | Bối cảnh hiện tại đang chưa rõ ràng và quá rộng, làm thế nào để thu hẹp? |
+| 5      | Trần Việt Tiến | Khi chuẩn bị bàn giao chức năng, tôi muốn xác định ca bình thường, biên và đầu vào không hợp lệ để giảm lỗi bỏ sót.           | Sinh viên/intern kiểm tra chức năng mình phát triển            | Liệt kê ca và kết quả mong đợi từ yêu cầu; chưa có số phút, bottleneck dự kiến.                                               | Phạm vi actor quá rộng, làm sao để xác định được?                        |
+| 6      | Trần Việt Tiến | Khi tra thư viện/API, tôi muốn tìm tài liệu đúng phiên bản và ngữ cảnh để áp dụng được vào chương trình.                      | Sinh viên/intern tích hợp thư viện/API                         | Đối chiếu phiên bản, cú pháp và điều kiện sử dụng; chưa có số phút, bottleneck dự kiến.                                       | Việc nào thể hiện success metric?                                        |
+| 7      | Lý Thành Lập   | Khi bài tập được thông báo qua LMS và chat, tôi muốn biết việc sắp đến hạn để sắp xếp thời gian và không bỏ sót.              | Sinh viên theo dõi bài tập nhiều môn                           | Đọc hai nhóm chat, phân biệt thông báo với trao đổi: ước lượng 5 phút trong tổng 15 phút/lần, chưa bấm giờ.                   | Có bằng chứng nào cho thấy sinh viên đã bỏ sót hạn nộp?                  |
+| 8      | Lý Thành Lập   | Khi nhận bài có nhiều file hướng dẫn, tôi muốn tìm đúng yêu cầu cho phần mình làm để bắt đầu đúng và hạn chế sửa lại.         | Sinh viên phụ trách báo cáo cá nhân trong bài tập nhóm         | Đối chiếu đề, mẫu, rubric và hướng dẫn nộp: ước lượng 9 phút trong tổng 20 phút/lần, chưa bấm giờ.                            | Làm sao xác định checklist đã đủ và đúng yêu cầu?                        |
+| 9      | Lý Thành Lập   | Khi thảo luận nhóm qua nhiều tin nhắn, tôi muốn tìm quyết định cuối và người phụ trách để tiếp tục làm mà không phải hỏi lại. | Thành viên nhận việc sau thảo luận nhóm                        | Phân biệt ý kiến đang bàn với quyết định đã chốt: ước lượng 6 phút trong tổng 15 phút/lần, chưa bấm giờ.                      | Bước nghẽn là tìm lại hay chưa ghi rõ quyết định cuối?                   |
 
 ### 2.2. Cluster
 
@@ -158,56 +156,91 @@ Tổng hợp:
 
 ### 4.1. Quy trình hiện tại
 
-Sơ đồ (ASCII, Mermaid hoặc link ảnh trong `report/assets/`):
-
 ```text
-
+HIỆN TẠI — ước lượng 20 phút/lần nhận bài, chưa bấm giờ
+[1 Xem danh sách tài liệu: 3'] → [2 Tìm mục liên quan: 5']
+→ [3 Đối chiếu yêu cầu giữa các file: 9'] ← BOTTLENECK
+→ [4 Ghi checklist để bắt đầu viết: 3']
 ```
 
-| Bước | Actor | Input | Output | Thời gian / tần suất | Ghi chú |
-| ---: | ----- | ----- | ------ | -------------------- | ------- |
-|    1 |       |       |        |                      |         |
-|    2 |       |       |        |                      |         |
-|    3 |       |       |        |                      |         |
-|    4 |       |       |        |                      |         |
-|    5 |       |       |        |                      |         |
+| Bước | Actor     | Input                                   | Output                                          | Thời gian / tần suất                         | Ghi chú                                                                                   |
+| ---: | --------- | --------------------------------------- | ----------------------------------------------- | -------------------------------------------- | ----------------------------------------------------------------------------------------- |
+|    1 | Sinh viên | Đề bài và danh sách file được cung cấp  | Danh sách tài liệu cần đọc                      | Ước lượng 3 phút/lần nhận bài nhiều tài liệu | Nhận diện đề, mẫu, rubric và hướng dẫn nộp                                                |
+|    2 | Sinh viên | Các file và phần việc cá nhân được giao | Các đoạn có thể liên quan đến phần mình làm     | Ước lượng 5 phút/lần                         | Mở và tìm từng mục, ghi vị trí để quay lại                                                |
+|    3 | Sinh viên | Các đoạn yêu cầu tìm được ở bước 2      | Các yêu cầu áp dụng, điểm trùng và điểm chưa rõ | Ước lượng 9 phút/lần                         | Bottleneck: đối chiếu nội dung giữa nhiều file; không tự suy đoán khi các nguồn mâu thuẫn |
+|    4 | Sinh viên | Yêu cầu đã đối chiếu                    | Checklist để bắt đầu viết báo cáo cá nhân       | Ước lượng 3 phút/lần                         | Ghi đầu ra cần có, điều kiện nộp và nguồn đối chiếu                                       |
 
-**Bottleneck chính:**
+**Bottleneck chính:** Bước 3 chiếm 9/20 phút theo ước lượng của card. Người học phải phân biệt yêu cầu cho cá nhân/nhóm, tìm điều kiện nằm ở rubric hoặc hướng dẫn nộp, và kiểm tra phần nào của bài mẫu chỉ dùng để tham khảo. Thời gian và nguyên nhân nghẽn cần được xác nhận bằng quan sát thực tế.
 
 ### 4.2. Quy trình tương lai
 
-Ghi rõ bước nào **Rule**, bước nào **AI**, bước nào **con người**, **boundary** ở đâu, **phương án quay về** khi AI sai.
+**Phương án cần thử trước:** checklist thủ công có link đến từng mục nguồn, kết hợp tìm kiếm trong file. Nếu cách này đủ đạt thời gian và chất lượng mong muốn, giữ No AI. Quy trình có AI dưới đây là phương án Workflow đề xuất trong Card #2 để so sánh; các bước được định sẵn, người học vẫn xác nhận checklist.
 
 ```text
-
+TƯƠNG LAI — mục tiêu 7,5 phút/lần, chưa đo
+[1 Tải tài liệu về : 1,5'] ← CON NGƯỜI
+→ [2 Kiểm file đọc được, gắn mã nguồn/vị trí: 0,5'] ← RULE
+→ [3 Trích nháp yêu cầu kèm nguồn: 1'] ← AI
+→ [4 Mở nguồn, đối chiếu rubric và sửa checklist: 3,5'] ← CON NGƯỜI; BOTTLENECK DỰ KIẾN
+→ [5 Kiểm trường bắt buộc + lưu checklist: 0,5'] ← RULE + CON NGƯỜI xác nhận lưu
+Nguồn thiếu/không đọc được → báo thiếu, quay lại bước 1.
+Yêu cầu mâu thuẫn → đánh dấu chờ xác nhận, hỏi người phụ trách rồi kiểm lại bước 4.
 ```
+
+| Bước | Actor / mức can thiệp               | Input                                       | Output                                                 | Thời gian mục tiêu | Kiểm soát / bàn giao                                                                                                  |
+| ---: | ----------------------------------- | ------------------------------------------- | ------------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
+|    1 | Sinh viên — con người               | Tài liệu được phép sử dụng, mô tả phần việc | Bộ tài liệu và phạm vi cần tìm                         | 1,5 phút           | Chọn đúng phiên bản; nêu rõ làm phần cá nhân nào                                                                      |
+|    2 | Công cụ — Rule                      | Bộ file đã chọn                             | Văn bản đọc được, mã file và số trang/mục              | 0,5 phút           | Báo file lỗi, trang không đọc được; không báo đã xử lý đầy đủ khi thiếu nội dung                                      |
+|    3 | AI                                  | Văn bản, phạm vi, mã nguồn và mẫu checklist | Nháp yêu cầu, loại yêu cầu, trích đoạn và vị trí nguồn | 1 phút             | Phân biệt yêu cầu bắt buộc với ví dụ; đánh dấu mơ hồ/mâu thuẫn, không tự giải quyết                                   |
+|    4 | Sinh viên — con người               | Nháp, tài liệu gốc và rubric                | Checklist đã sửa, nguồn đã kiểm và câu hỏi còn chờ     | 3,5 phút           | Kiểm mọi yêu cầu; quét độc lập rubric/hướng dẫn nộp để phát hiện cả mục AI bỏ sót, không chỉ kiểm các mục AI đã trích |
+|    5 | Công cụ — Rule; sinh viên duyệt lưu | Checklist sau rà soát                       | Bản checklist có trạng thái xác nhận và link nguồn     | 0,5 phút           | Rule kiểm ô bắt buộc/trùng lặp; người học quyết định nội dung đủ để bắt đầu viết                                      |
+
+**Cấu trúc checklist:** yêu cầu; áp dụng cho cá nhân/nhóm; đầu ra cần có; tiêu chí hoàn thành; tên file và trang/mục nguồn; trạng thái đã kiểm/chờ làm rõ. Mục chưa xác nhận phải hiển thị riêng, không được âm thầm bỏ khỏi danh sách.
+
+**Boundary:** AI chỉ trích nháp trong bộ tài liệu được cung cấp, không tạo thêm quy định, không biến nội dung ví dụ thành yêu cầu bắt buộc và không tự chọn nguồn ưu tiên khi các file mâu thuẫn. Mỗi yêu cầu phải dẫn đến đoạn nguồn để sinh viên kiểm tra. Sinh viên duyệt trước khi dùng checklist để viết; các yêu cầu quan trọng về nội dung, tiêu chí chấm và điều kiện nộp phải được kiểm trực tiếp. Quy trình không viết báo cáo hay nộp bài thay người học.
+
+**Phương án quay về:** Nếu thiếu nguồn, AI trích sai hoặc không dẫn được vị trí, bỏ phần nháp đó và dùng tìm kiếm trong file + checklist thủ công. Nếu lỗi công cụ hoặc thời gian rà soát nháp không giúp ích, quay về toàn bộ quy trình hiện tại. Khi tài liệu mâu thuẫn, giữ cả các đoạn nguồn và hỏi giảng viên/người phụ trách; chỉ cập nhật checklist sau khi làm rõ.
+
+**Điều kiện thử:** Bộ file có thể đọc được và có phiên bản xác định. Chi phí chuẩn bị công cụ/mẫu một lần ghi riêng; thời gian chọn, đọc/chuyển đổi file, chờ AI và kiểm lại đều tính trong mỗi lần thực hiện. Nếu cần OCR hay thời gian hỏi người phụ trách, ghi thêm thay vì cố ép tổng vào 7,5 phút.
 
 ### 4.3. Before / after
 
-| Chỉ số               | Trước | Sau (kỳ vọng) | Ghi chú |
-| -------------------- | ----: | ------------: | ------- |
-| Số bước              |       |               |         |
-| Tổng thời gian       |       |               |         |
-| Số bước thủ công     |       |               |         |
-| Bottleneck chính     |       |               |         |
-| Rủi ro mới phát sinh |       |               |         |
+| Chỉ số                        | Trước                             | Sau (kỳ vọng)                                                       | Ghi chú                                                                                |
+| ----------------------------- | --------------------------------- | ------------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
+| Số bước                       | 4                                 | 5                                                                   | Tăng bước kiểm soát và dẫn nguồn; không lấy số bước ít hơn làm mục tiêu                |
+| Tổng thời gian                | Ước lượng 20 phút/lần             | Mục tiêu 7,5 phút/lần, dưới 8 phút theo card                        | Gồm 1,5 + 0,5 + 1 + 3,5 + 0,5; chưa có kết quả đo                                      |
+| Số bước có thao tác con người | 4/4                               | 3/5: bước 1, 4 và duyệt lưu ở 5                                     | Bước 5 kết hợp Rule và con người; không coi toàn bộ bước này là tự động                |
+| Bottleneck chính              | Đối chiếu giữa file: 9 phút       | Dự kiến kiểm nguồn và sửa checklist: 3,5 phút                       | Giữ người học kiểm cả tính đúng và tính đầy đủ                                         |
+| Yêu cầu quan trọng bị bỏ sót  | Chưa có số lượng xác nhận         | Mục tiêu 0                                                          | Đối chiếu với danh sách chuẩn do người phụ trách/reviewer xác nhận từ toàn bộ tài liệu |
+| Khả năng truy lại nguồn       | Chưa có số đo trong card          | Mục tiêu mọi mục đã duyệt có nguồn kiểm được                        | Link/mã file và số trang/mục phải dẫn đúng nội dung                                    |
+| Rủi ro mới phát sinh          | Đọc thiếu hoặc hiểu thiếu yêu cầu | AI bịa yêu cầu, bỏ sót mục, dùng sai phiên bản hoặc trích sai nguồn | Báo thiếu file, giữ nhãn chờ xác nhận, kiểm nguồn và fallback thủ công                 |
+
+**Cách kiểm chứng:** So sánh quy trình hiện tại, checklist thủ công có link và Workflow đề xuất trên các bộ tài liệu tương đương về số file/độ dài/độ khó. Ghi cả mức quen thuộc để tránh đo lại cùng bài đã nhớ yêu cầu. Bấm giờ từ mở bộ tài liệu đến khi checklist được kiểm xong; reviewer đối chiếu độc lập để đếm mục thiếu/sai và nguồn không hợp lệ. Chỉ giữ phương án AI nếu có lợi so với checklist thủ công mà vẫn đạt 0 yêu cầu quan trọng bị bỏ sót; nếu chưa đạt, ghi nhận kết quả và điều chỉnh thay vì kết luận đã cải thiện.
 
 ---
 
 ## 5. Problem Statement v0 (CP5)
 
-| Trường                                                                     | Nội dung |
-| -------------------------------------------------------------------------- | -------- |
-| **Actor**                                                                  |          |
-| **Quy trình**                                                              |          |
-| **Bottleneck**                                                             |          |
-| **Impact**                                                                 |          |
-| **Success Metric** (baseline → target, cách đo)                            |          |
-| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) |          |
+**Bản mô tả v0:** Khi bắt đầu phần báo cáo cá nhân của bài tập nhóm có nhiều tài liệu hướng dẫn, sinh viên phải tìm và đối chiếu yêu cầu giữa đề bài, mẫu, rubric và hướng dẫn nộp trước khi viết. Quy trình hiện tại mất khoảng 20 phút/lần theo ước lượng trong Card #2 của Lý Thành Lập; bước đối chiếu chiếm khoảng 9 phút. Bài toán cần giải là giảm thời gian tạo checklist đúng và đủ yêu cầu áp dụng cho phần cá nhân, đồng thời giữ khả năng kiểm tra từng yêu cầu từ tài liệu gốc. Mục tiêu thử nghiệm là dưới 8 phút/lần, không bỏ sót yêu cầu quan trọng; chưa có số đo xác nhận hiệu quả hay kết luận cần dùng AI.
 
-Phản biện nhận được (từ AI hoặc nhóm khác) và nhóm có đồng ý không:
+| Trường                                                                     | Nội dung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Actor**                                                                  | Sinh viên phụ trách phần báo cáo cá nhân trong một bài tập nhóm, vừa nhận bộ tài liệu và chưa xác định đủ yêu cầu cho phần mình làm. Người phụ trách/reviewer hỗ trợ xác nhận yêu cầu còn mơ hồ.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| **Quy trình**                                                              | Xem danh sách tài liệu (3 phút) → tìm mục liên quan (5 phút) → đối chiếu đề, mẫu, rubric và hướng dẫn nộp (9 phút) → ghi checklist trước khi viết (3 phút). Đầu ra gồm yêu cầu, đầu việc/tiêu chí hoàn thành, nguồn và trạng thái xác nhận. Các thời gian là ước lượng từ CP2, chưa bấm giờ.                                                                                                                                                                                                                                                                                                                                                      |
+| **Bottleneck**                                                             | Bước 3 — đối chiếu yêu cầu nằm ở nhiều file, ước lượng 9/20 phút mỗi lần: phân biệt phần cá nhân/nhóm, yêu cầu bắt buộc/nội dung ví dụ và phát hiện điểm chưa thống nhất. Cần đo từng bước để xác nhận đây là bước nghẽn thực tế.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Impact**                                                                 | Tốn khoảng 20 phút chuẩn bị trước khi bắt đầu viết theo ước lượng cá nhân; có nguy cơ bỏ sót yêu cầu, hỏi lại hoặc sửa nội dung sau khi đã làm. Chưa có số lần làm lại, mức ảnh hưởng điểm hay số người gặp để suy rộng cho cả lớp.                                                                                                                                                                                                                                                                                                                                                                                                               |
+| **Success Metric** (baseline → target, cách đo)                            | Tốc độ: baseline tạm thời 20 phút/lần → dưới 8 phút/lần; phương án phần 4 đặt mục tiêu 7,5 phút. Đo từ mở bộ tài liệu đến khi checklist được kiểm xong, gồm chọn file, chờ công cụ và rà soát. Chất lượng: 0 yêu cầu quan trọng bị bỏ sót, 0 yêu cầu không có căn cứ được duyệt và mọi mục đã duyệt truy lại được nguồn. Reviewer lập danh sách chuẩn từ toàn bộ tài liệu, đánh dấu yêu cầu quan trọng trước khi đánh giá; đối chiếu checklist với danh sách này. So sánh quy trình cũ, checklist thủ công có link và phương án có AI trên các bộ tài liệu tương đương; ghi số file, độ dài và mức quen thuộc. Mục tiêu chưa phải kết quả đã đạt. |
+| **Boundary** (AI không được làm gì; khi nào cần con người kiểm tra — HITL) | Phạm vi là tìm yêu cầu và lập checklist, không viết hoặc nộp báo cáo thay sinh viên. Nếu thử AI, chỉ dùng tài liệu được cung cấp, không bịa quy định, không coi ví dụ là yêu cầu bắt buộc, không tự quyết nguồn ưu tiên hoặc xóa điểm mâu thuẫn. Nháp phải có đoạn/vị trí nguồn; thiếu file, thiếu nguồn hoặc yêu cầu chưa rõ phải được đánh dấu. Sinh viên mở nguồn kiểm cả tính đúng lẫn tính đầy đủ trước khi duyệt checklist; mâu thuẫn cần hỏi người phụ trách. Khi nháp sai hoặc rà soát không hiệu quả, quay về tìm kiếm và checklist thủ công.                                                                                            |
 
--
+**Phản biện từ AI và cách bản nháp đã điều chỉnh:** Các góp ý dưới đây do AI đưa ra khi rà soát; chưa ghi nhận phản biện từ nhóm khác hoặc ý kiến đồng ý của nhóm. Nhóm cần tự chốt bản v0 trước khi dùng cho CP6.
+
+| Phản biện                                                            | Điều chỉnh trong v0                                                                                              | Trạng thái ý kiến nhóm |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ---------------------- |
+| Ước lượng 20 phút và bước nghẽn 9 phút chưa phải baseline đo thực tế | Giữ nhãn ước lượng, nêu cách bấm giờ và không khẳng định đã tiết kiệm thời gian                                  | Chưa ghi nhận          |
+| Checklist tạo nhanh nhưng thiếu yêu cầu vẫn có thể làm bài sai       | Bổ sung 0 yêu cầu quan trọng bị bỏ sót, 0 mục vô căn cứ được duyệt và đối chiếu với danh sách chuẩn độc lập      | Chưa ghi nhận          |
+| Chỉ kiểm các mục AI trích ra sẽ không tìm được những mục AI bỏ sót   | Yêu cầu người học rà soát rubric/hướng dẫn nộp độc lập; reviewer đối chiếu toàn bộ tài liệu                      | Chưa ghi nhận          |
+| Có thể chỉ cần checklist có link, chưa cần AI                        | Đưa phương án thủ công vào so sánh; chưa chọn mức can thiệp AI tại v0                                            | Chưa ghi nhận          |
+| Dùng lại cùng bài để thử sẽ có lợi thế do người học đã nhớ yêu cầu   | So sánh bộ tài liệu tương đương và ghi mức quen thuộc; không coi lượt làm lại bài đã biết là bằng chứng duy nhất | Chưa ghi nhận          |
 
 ---
 
