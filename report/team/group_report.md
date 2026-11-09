@@ -106,49 +106,59 @@ Shortlist đề xuất gồm **8**, **3**, **4**: 8 là candidate đã ghi trong
 
 ### 3.1. Assumption Map
 
-|   # | Giả định | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước? |
-| --: | -------- | -------------------------------------------------- | ---------------: | ---------------------: | ----------------- |
-|   1 |          |                                                    |                  |                        |                   |
-|   2 |          |                                                    |                  |                        |                   |
-|   3 |          |                                                    |                  |                        |                   |
-|   4 |          |                                                    |                  |                        |                   |
-|   5 |          |                                                    |                  |                        |                   |
-|   6 |          |                                                    |                  |                        |                   |
+|   # | Giả định                                                                                                            | Loại (Value / Usability / Feasibility / Viability) | Quan trọng (1–5) | Đã có bằng chứng (1–5) | Kiểm chứng trước?                             |
+| --: | ------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | ---------------: | ---------------------: | --------------------------------------------- |
+|   1 | Sinh viên phải đọc và đối chiếu nhiều file để biết đủ yêu cầu cho phần việc của mình. | Value | 5 | 2 | Có — hỏi về lần làm bài gần nhất; bấm giờ |
+|   2 | Sinh viên có thể nhầm yêu cầu nộp nhóm với yêu cầu nộp cá nhân. | Value | 5 | 2 | Có — kiểm trên bộ tài liệu và bài nộp thật |
+|   3 | Khó xác định file hoặc phiên bản nào là nguồn chính thức khi các hướng dẫn khác nhau. | Value | 5 | 2 | Có — hỏi người phụ trách và đối chiếu file |
+|   4 | Bước đối chiếu yêu cầu giữa các file là bước tốn thời gian nhất trong quy trình 4 bước. | Value | 5 | 1 | Có — bấm giờ từng bước, chưa có số đo |
+|   5 | Checklist thủ công có link nguồn vẫn chưa đủ giảm thời gian mà không bỏ sót yêu cầu quan trọng. | Feasibility | 4 | 1 | Sau — thử checklist trước khi thử AI |
 
-_Điền 4–6 giả định; xóa dòng thừa._
-
-Giả định nhóm kiểm chứng trong buổi này:
+**Giả định nhóm kiểm chứng trước:** #1–#4 vì quan trọng nhưng mới có tự thuật của hai học viên và thời gian ước lượng trong Problem Card. Điểm bằng chứng 1–2 là đánh giá ban đầu, chưa phải kết quả đo. Nếu bước đối chiếu không phải bottleneck hoặc checklist thủ công đã đủ, nhóm cần sửa quy trình tương lai và cân nhắc No AI.
 
 ### 3.2. Kiểm chứng
 
-Cách đã dùng: Phỏng vấn / Survey / Log, ticket, review
+**Cách đã dùng:** Phỏng vấn 2 học viên trong lớp về lần gần nhất phải đọc hướng dẫn để xác định việc cần làm và nộp. Hai buổi được ghi thành Interview Snapshot dưới đây. Ngày và cách phỏng vấn chưa được ghi trong snapshot; nhóm cần bổ sung từ ghi chép thật, không suy đoán. Khảo sát 5 người về hạn nộp thuộc candidate khác, được lưu ở mục 9 và không tính là kiểm chứng trực tiếp cho problem nhiều tài liệu.
 
-Interview snapshot (mỗi buổi phỏng vấn một bảng, hoặc đặt file trong `report/assets/cp4-interview-snapshot-N.md`):
+Interview snapshot — người thứ 1:
 
-| Trường                                            | Nội dung |
-| ------------------------------------------------- | -------- |
-| Người được hỏi (vai trò, không ghi tên thật)      |          |
-| Câu nói đáng nhớ nhất (nguyên văn)                |          |
-| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? |          |
-| Hiện đang xử lý bằng cách nào (workaround)?       |          |
-| Mất bao lâu, bao lần?                             |          |
-| Insight / opportunity rút ra                      |          |
+| Trường                                            | Nội dung                                                                                                                                                                                                              |
+| ------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Người được hỏi (vai trò, không ghi tên thật)      | Học viên                                                                                                                                                                                                              |
+| Câu nói đáng nhớ nhất (nguyên văn)                | Mình nhớ hạn nộp báo cáo của nhóm, nhưng lại quên phần đánh giá cá nhân cũng phải nộp riêng.                                                                                                                          |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Tối thứ 6 tuần trước, tôi mở hệ thống học tập để kiểm tra bài tập. Báo cáo nhóm đã được nhóm trưởng nộp nên tôi nghĩ đã hoàn thành. Khi đọc lại hướng dẫn, tôi mới phát hiện mỗi thành viên còn phải nộp bài cá nhân. |
+| Hiện đang xử lý bằng cách nào (workaround)?       | Đọc lại yêu cầu bài tập hỏi mọi người trong nhóm phần nào nộp chung và phần nào nộp riêng, rồi đánh dấu từng phần đã hoàn thành trong ghi chú.                                                                        |
+| Mất bao lâu, bao lần?                             | khoảng 12 phút                                                                                                                                                                                                        |
+| Insight / opportunity rút ra                      | ra Học viên có thể nhớ đúng hạn nhưng chưa nắm đủ các phần cần nộp. Cơ hội là giúp học viên theo dõi từng đầu việc, phân biệt trách nhiệm cá nhân và nhóm, cùng trạng thái hoàn thành.                                |
+
+Interview snapshot — người thứ 2:
+
+| Trường                                            | Nội dung                                                                                                                                                                                    |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Người được hỏi (vai trò, không ghi tên thật)      | Học viên                                                                                                                                                                                    |
+| Câu nói đáng nhớ nhất (nguyên văn)                | Có nhiều file hướng dẫn đôi lúc khoogn biết tham khảo file nào cho đúng và chính xác nhất                                                                                                   |
+| Lần gần nhất gặp vấn đề này: chuyện gì đã xảy ra? | Thứ 5 tuần trước                                                                                                                                                                            |
+| Hiện đang xử lý bằng cách nào (workaround)?       | đọc kĩ lại tất cả các file hoặc hỏi mọi người xung quanh                                                                                                                                    |
+| Mất bao lâu, bao lần?                             | khoảng 20-30 phút để có thể hiểu các yêu cầu                                                                                                                                                |
+| Insight / opportunity rút ra                      | ra Học viên mất thời gian đối chiếu vì chưa xác định được tài liệu nào là bản chính thức. Cơ hội là giúp học viên nhận biết bản hướng dẫn cần sử dụng và những thay đổi giữa các phiên bản. |
 
 Tổng hợp:
 
-| Nguồn | Số người / số mẫu | Tín hiệu xác nhận | Tín hiệu phản bác |
-| ----- | ----------------: | ----------------- | ----------------- |
-|       |                   |                   |                   |
+| Nguồn                                                                 | Số người / số mẫu | Tín hiệu xác nhận                                                                                                                                                                                                 | Tín hiệu phản bác                                                                                                                                                        |
+| --------------------------------------------------------------------- | ----------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Phỏng vấn học viên, 2 Interview Snapshot ở trên | 2 | Người thứ nhất phát hiện thêm phần nộp cá nhân khi đọc lại hướng dẫn, mất khoảng 12 phút; người thứ hai cho biết phải đọc lại nhiều file hoặc hỏi người khác, mất khoảng 20–30 phút để hiểu yêu cầu. | Chưa có số đo riêng cho bước đối chiếu; snapshot thứ hai mới ghi “thứ 5 tuần trước”, chưa kể rõ một tình huống và file cụ thể. Hai trường hợp chưa chứng minh pain phổ biến ở nhiều sinh viên. |
 
-**Nhóm đã sửa problem thế nào sau kiểm chứng:**
+**Nhóm đã sửa problem thế nào sau kiểm chứng:** Thu hẹp từ “khó theo dõi bài tập” thành “khó xác định đầy đủ yêu cầu áp dụng cho phần việc của mình khi thông tin nằm trong nhiều file hướng dẫn”. Trường hợp thứ nhất cho thấy rủi ro bỏ sót phần nộp cá nhân dù nhớ đúng hạn; trường hợp thứ hai gợi ý khó nhận biết file cần tham khảo. Chưa thể kết luận bản mới nhất là bản chính thức hay bước đối chiếu thực sự mất 9 phút nếu chưa kiểm file và bấm giờ.
 
 ### 3.3. Research giải pháp đã có
 
 | Công cụ / case / pattern | Link | Giải bước nào trong quy trình? | Điểm mạnh | Khoảng trống / rủi ro | Bài học cho nhóm |
 | ------------------------ | ---- | ------------------------------ | --------- | --------------------- | ---------------- |
-|                          |      |                                |           |                       |                  |
-|                          |      |                                |           |                       |                  |
-|                          |      |                                |           |                       |                  |
+| Google Drive Search | https://support.google.com/drive/answer/2375114?co=GENIE.Platform%3DDesktop&hl=en | Bước 2: tìm file và đoạn liên quan theo từ khóa, loại file, người liên quan, ngày sửa. | Thu hẹp bộ file cần đọc mà không cần AI. | Chỉ tìm trong file được phép truy cập; kết quả tìm kiếm không xác nhận file nào là nguồn chính thức. | Thử tìm kiếm có bộ lọc trước khi dùng AI. |
+| Lịch sử phiên bản Google Docs | https://support.google.com/docs/answer/190843 | Bước 3: xem thay đổi, người sửa và phiên bản của tài liệu trong Google Docs. | Giúp đối chiếu các lần sửa của cùng một file. | Cần quyền phù hợp; phiên bản mới nhất không tự động là hướng dẫn có thẩm quyền, và tính năng này không so sánh mọi file khác nhau. | Hỏi người phụ trách xác nhận tài liệu chính thức khi nguồn mâu thuẫn. |
+| Gemini Notebook (NotebookLM) | https://support.google.com/gemininotebook/answer/16179559 | Bước 3: hỏi về yêu cầu trong bộ nguồn đã chọn, mở trích dẫn để kiểm đoạn gốc. | Có thể tạo nháp yêu cầu kèm vị trí nguồn để sinh viên kiểm. | Chỉ xử lý nguồn được đưa vào; không bảo đảm đủ yêu cầu hoặc tự quyết nguồn nào có thẩm quyền. | Chỉ thử bước hỗ trợ trích nháp nếu checklist thủ công chưa đủ; sinh viên vẫn kiểm toàn bộ nguồn quan trọng. |
+
+**Kết luận research:** Công cụ có sẵn đã hỗ trợ tìm file, xem thay đổi và trích nháp yêu cầu kèm nguồn. Khoảng trống chính là xác định tài liệu nào có thẩm quyền và bảo đảm không bỏ sót yêu cầu; người học phải kiểm hai việc này. Nhóm nên thử tìm kiếm trong file + checklist có link nguồn trước, rồi mới so sánh với Workflow dùng Gemini Notebook nếu phương án thủ công chưa đạt. Chưa có bằng chứng cần xây Agent.
 
 ---
 
@@ -338,31 +348,37 @@ Vì sao: Vì tuy rằng số lượng các file hướng dẫn ít nhưng các h
 
 | Rủi ro          | Câu hỏi                                                           | Mức độ rủi ro (Thấp = an toàn / TB / Cao = nguy hiểm) | Lý do / bằng chứng |
 | --------------- | ----------------------------------------------------------------- | ----------------------------------------------------- | ------------------ |
-| **Value**       | Người dùng có thật sự cần và sẽ dùng không?                       |                                                       |                    |
-| **Usability**   | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? |                                                       |                    |
-| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không?                     |                                                       |                    |
-| **Viability**   | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành?     |                                                       |                    |
+| **Value**       | Người dùng có thật sự cần và sẽ dùng không?                       | Cao | Mới có 2 phỏng vấn; baseline 20 phút chưa đo, chưa thử checklist thủ công. |
+| **Usability**   | Người dùng có dùng được, có hiểu và sửa được đầu ra của AI không? | Trung bình | Chưa thử sinh viên kiểm yêu cầu AI trích sai hoặc bỏ sót. |
+| **Feasibility** | Có đủ dữ liệu, công cụ, kỹ năng để làm không?                     | Trung bình | Có công cụ trích dẫn nguồn, nhưng chưa thử trên bộ file thật. |
+| **Viability**   | Có hợp chi phí, pháp lý, quy định tổ chức không? Ai vận hành?     | Trung bình | Chưa xác nhận quyền đưa tài liệu học tập vào công cụ AI. |
 
 ### 8.2. Kết luận
 
-**Quyết định:** Go / Not Yet / No-Go
+**Quyết định:** Not Yet.
 
-**Lý do:**
+**Lý do:** Rủi ro Value còn Cao; chưa chứng minh Workflow tốt hơn checklist thủ công.
 
-**Nếu Go — pilot nhỏ nhất:**
+**Nếu Go — pilot nhỏ nhất:** Chưa áp dụng.
 
-**Nếu Not Yet — cần kiểm chứng gì trước:**
+**Nếu Not Yet — cần kiểm chứng gì trước:** Bấm giờ trên 3 bộ tài liệu tương đương; thử checklist thủ công, sau đó mới so với AI. Người kiểm độc lập đếm yêu cầu quan trọng bị bỏ sót.
 
-**Nếu No-Go — nên làm gì thay AI:**
+**Nếu No-Go — nên làm gì thay AI:** Chưa áp dụng.
 
-**Ngưỡng dừng** (nếu sau … mà … thì quay về …):
+**Ngưỡng dừng** (nếu sau … mà … thì quay về …): Nếu checklist thủ công đạt dưới 8 phút và không bỏ sót yêu cầu quan trọng, dừng hướng AI. Nếu AI bỏ sót 1 yêu cầu quan trọng hoặc dẫn sai nguồn, quay về checklist thủ công.
 
 ---
 
 ## 9. Hạn chế và hướng tiếp theo
 
--
+- CP3 chưa có bảng pitch, chấm điểm và lý do loại các candidate khác; cần bổ sung bằng ghi chép họp nhóm thật, không suy đoán từ CP4–CP5.
+- CP4 mới có 2 Interview Snapshot; snapshot thứ hai còn thiếu diễn biến cụ thể, cả hai chưa ghi ngày và cách hỏi. Cần bổ sung từ ghi chép thật và bấm giờ từng bước để kiểm baseline 20 phút, bottleneck 9 phút.
+- Khảo sát 5 người về theo dõi hạn nộp là bằng chứng cho **candidate khác**, không tính là kiểm chứng trực tiếp cho problem nhiều tài liệu. [Xem bản xuất khảo sát](../assets/cp4-survey-han-nop.pdf). Trong mẫu đó, 4/5 kiểm nhóm chat cùng LMS và 4/5 ước lượng lần kiểm gần nhất mất 5–15 phút; 0/5 báo bỏ sót hẳn bài tập. Có thể nghiên cứu riêng ở vòng sau.
+- Chưa có phép thử so sánh checklist thủ công với Workflow đề xuất; mục tiêu thời gian và chất lượng ở mục 4–5 vẫn là giả thuyết.
 
 ## 10. Tài liệu tham khảo
 
--
+- Google Drive Help, “Search for files in Google Drive”: https://support.google.com/drive/answer/2375114?co=GENIE.Platform%3DDesktop&hl=en
+- Google Docs Editors Help, “Find what's changed in a file”: https://support.google.com/docs/answer/190843
+- Gemini Notebook Help, “Use chat in Gemini Notebook”: https://support.google.com/gemininotebook/answer/16179559
+- Kết quả khảo sát candidate theo dõi hạn nộp: [report/assets/cp4-survey-han-nop.pdf](../assets/cp4-survey-han-nop.pdf)
