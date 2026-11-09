@@ -248,68 +248,74 @@ Yêu cầu mâu thuẫn → đánh dấu chờ xác nhận, hỏi người phụ
 
 ### 6.1. Ma trận độ mơ hồ × độ phức tạp
 
-Bài của nhóm nằm ở ô:
+Bài của nhóm nằm ở ô: Độ mơ hồ cao x độ phức tạp thấp
 
-Vì sao:
+Vì sao: Vì tuy rằng số lượng các file hướng dẫn ít nhưng các hướng dẫn được viết dưới dạng ngôn ngữ tự nhiên, dẫn đến việc khó nhớ các yêu cầu để tạo checklist.
 
 ### 6.2. So sánh 4 mức
 
-| Mức                       | Phương án cho bài của nhóm | Đủ khi nào | Rủi ro | Chọn? |
-| ------------------------- | -------------------------- | ---------- | ------ | ----- |
-| **No AI** (sửa quy trình) |                            |            |        |       |
-| **Rule**                  |                            |            |        |       |
-| **Workflow**              |                            |            |        |       |
-| **Agent**                 |                            |            |        |       |
+| Mức                       | Phương án cho bài của nhóm                                                                                                                     | Đủ khi nào                                                                                                                 | Rủi ro                                                                                           | Chọn?                                                                       |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| **No AI** (sửa quy trình) | Sinh viên dùng mẫu checklist có link, tìm kiếm trong các file và đối chiếu rubric/hướng dẫn nộp trước khi viết.                                | Checklist sau kiểm tra đạt dưới 8 phút/lần, không thiếu yêu cầu quan trọng và mọi mục có nguồn đúng.                       | Đọc sót, checklist lỗi thời hoặc mất thời gian đối chiếu; cần ghi phiên bản và rà toàn bộ nguồn. | Thử trước; giữ nếu đạt mục tiêu.                                            |
+| **Rule**                  | Kiểm danh sách file, tìm tiêu đề/từ khóa, kiểm trường nguồn/trạng thái và báo mục trùng; người học diễn giải nội dung.                         | Cấu trúc tài liệu ổn định, quy tắc tìm đủ các yêu cầu và tổng thời gian kể cả kiểm tay đạt mục tiêu.                       | Từ khóa bỏ sót cách diễn đạt khác; kiểm đủ trường không chứng minh đúng/đủ nội dung.             | Dùng cho thao tác cố định; chưa có bằng chứng Rule đơn lẻ đủ hoặc không đủ. |
+| **Workflow**              | Các bước cố định: chọn file → Rule kiểm nguồn → AI trích nháp → sinh viên kiểm cả nguồn lẫn mục thiếu → Rule kiểm trường, sinh viên duyệt lưu. | Sau thử No AI/Rule vẫn còn nghẽn diễn giải; đầu vào đủ, nháp có nguồn và tổng thời gian kiểm/sửa có lợi hơn cách đơn giản. | AI bịa, bỏ sót, nhầm ví dụ thành quy định; thời gian kiểm có thể xóa hết lợi ích.                | Phương án có AI được đề xuất để thử, chưa chọn triển khai chính thức.       |
+| **Agent**                 | AI tự chọn file/công cụ, quyết định tìm thêm và lặp đến khi tự cho rằng đủ yêu cầu.                                                            | Chỉ cân nhắc khi có tác vụ tìm kiếm thích nghi mà Workflow cố định không xử lý được, cùng giới hạn và phép đánh giá rõ.    | Đọc vượt phạm vi, tự chọn ưu tiên nguồn, khó biết đã đủ, thêm chi phí và độ trễ.                 | Không chọn: hiện chưa có nhu cầu tự quyết bước tiếp theo.                   |
 
-**Mức chọn:**
+**Mức chọn:** Workflow cho phép thử có AI theo mục 4.2; bước AI chỉ trích nháp yêu cầu kèm nguồn. Thứ tự kiểm chứng là No AI → Rule nếu cần → Workflow khi mức dưới chưa đủ. Chưa đủ bằng chứng chốt mức vận hành; nếu checklist thủ công đạt mục tiêu thì chọn No AI.
 
-**Vì sao không chọn mức đơn giản hơn:**
+**Vì sao không chọn mức đơn giản hơn:** Tìm kiếm/từ khóa hỗ trợ tìm đoạn nhưng người học vẫn tốn thời gian diễn giải, gộp yêu cầu và phân biệt phạm vi giữa các file. Chỉ thử Workflow sau khi đo được hạn chế đó; nếu phần kiểm nháp AI không nhanh hơn đối chiếu thủ công ở cùng chất lượng, không nâng mức can thiệp.
 
 ### 6.3. AI Canvas rút gọn
 
-| Thành phần                                                        | Nội dung |
-| ----------------------------------------------------------------- | -------- |
-| **Prediction** — AI dự đoán / tạo ra gì?                          |          |
-| **Judgment** — con người cân nhắc, quyết định gì?                 |          |
-| **Action** — hành động cuối cùng là gì, ai làm?                   |          |
-| **Outcome** — đo kết quả bằng gì?                                 |          |
-| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? |          |
-| **Feedback** — lấy phản hồi ở đâu để cải thiện?                   |          |
+| Thành phần                                                        | Nội dung                                                                                                                                                                                                                                                                                                  |
+| ----------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Prediction** — AI dự đoán / tạo ra gì?                          | Trích nháp yêu cầu áp dụng cho báo cáo cá nhân; phân loại bắt buộc/ví dụ, cá nhân/nhóm; gợi ý gộp mục trùng và đánh dấu mơ hồ/mâu thuẫn. Mỗi mục có trích đoạn và vị trí nguồn; đây là diễn giải cần kiểm, không phải quy định mới.                                                                       |
+| **Judgment** — con người cân nhắc, quyết định gì?                 | Sinh viên mở nguồn kiểm tính đúng, rà độc lập toàn bộ rubric/hướng dẫn nộp để tìm mục bị bỏ sót. Người phụ trách/giảng viên xác nhận mâu thuẫn; AI không tự chọn nguồn ưu tiên.                                                                                                                           |
+| **Action** — hành động cuối cùng là gì, ai làm?                   | Sinh viên sửa, duyệt và lưu checklist rồi tự viết báo cáo; giữ riêng các mục chờ làm rõ. Rule chỉ kiểm trường bắt buộc và hỗ trợ lưu sau khi người học xác nhận.                                                                                                                                          |
+| **Outcome** — đo kết quả bằng gì?                                 | Tổng phút từ mở tài liệu đến checklist kiểm xong; số yêu cầu quan trọng bị thiếu, mục sai/vô căn cứ và nguồn không hợp lệ. So sánh với No AI/Rule ở cùng tiêu chí chất lượng; chưa có kết quả đo.                                                                                                         |
+| **Input** — AI cần dữ liệu đầu vào gì mỗi lần chạy? Có sẵn không? | Toàn văn bộ hướng dẫn đúng phiên bản, rubric, mẫu, hướng dẫn nộp, phạm vi phần cá nhân và cấu trúc checklist ở mục 4.2; mỗi đoạn có mã file/vị trí. Repo có tài liệu để lập bộ thử, nhưng phải xác nhận đủ file và đọc được trước mỗi lượt; không dùng riêng các đoạn tìm bằng từ khóa làm toàn bộ input. |
+| **Feedback** — lấy phản hồi ở đâu để cải thiện?                   | Ghi từng mục reviewer phát hiện thiếu/sai, nguồn đúng, phần người học sửa và thời gian kiểm. Dùng lỗi để sửa hướng dẫn trích/mẫu checklist rồi đánh giá trên bộ khác; không coi sửa prompt hoặc sửa nháp là đã chứng minh hiệu quả, không tự học từ dữ liệu người học.                                    |
 
 ### 6.4. Hai câu hỏi của Google PAIR
 
-- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng:
-- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào:
+- Người dùng muốn **được hỗ trợ (augment)** hay **giao hẳn việc (automate)**? Bằng chứng: Người dùng muốn được hỗ trợ vì các checklist vẫn có thể bị nhầm và không được phép làm bài hộ người dùng
+- AI sai kiểu nào tệ hơn, **báo nhầm** hay **bỏ sót**? Vì sao, và thiết kế đã xử lý thế nào: AI bị bỏ sót tệ hơn, thiết kế đã xử lí khi yêu cầu người học kiểm tra lại checklist với các file hướng dẫn
 
 ---
 
 ## 7. Problem Statement v1 + tiêu chí đánh giá (CP6)
 
-| Trường                                          | Nội dung                        |
-| ----------------------------------------------- | ------------------------------- |
-| **Actor**                                       |                                 |
-| **Quy trình**                                   |                                 |
-| **Bottleneck**                                  |                                 |
-| **Impact**                                      |                                 |
-| **Success Metric** (baseline → target, cách đo) |                                 |
-| **Boundary**                                    |                                 |
-| **AI intervention point**                       |                                 |
-| **Mức chọn**                                    | No AI / Rule / Workflow / Agent |
-| **Rủi ro & người kiểm tra**                     |                                 |
+| Trường                                          | Nội dung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Actor**                                       | Sinh viên vừa nhận bài tập nhóm, phụ trách báo cáo cá nhân và chưa xác định đủ yêu cầu cho phần mình; người phụ trách/reviewer hỗ trợ làm rõ yêu cầu. Giữ phạm vi actor của v0, chưa suy rộng cho cả lớp.                                                                                                                                                                                                                                                                                                                                       |
+| **Quy trình**                                   | Hiện tại: xem danh sách tài liệu (3 phút) → tìm mục liên quan (5 phút) → đối chiếu (9 phút) → ghi checklist (3 phút), đều là ước lượng. Thử checklist thủ công có link trước; nếu chưa đủ thì so sánh với quy trình cố định ở 4.2: chọn file → kiểm nguồn → trích nháp → người học rà/sửa → kiểm trường và duyệt lưu.                                                                                                                                                                                                                           |
+| **Bottleneck**                                  | Bước đối chiếu nhiều file: phân biệt cá nhân/nhóm, bắt buộc/ví dụ và điểm chưa thống nhất, ước lượng 9/20 phút. Cần quan sát và bấm giờ từng bước; không mặc định việc nhớ hướng dẫn là nguyên nhân duy nhất.                                                                                                                                                                                                                                                                                                                                   |
+| **Impact**                                      | Ước lượng 20 phút chuẩn bị/lần từ Card #2 của Lý Thành Lập; có nguy cơ hỏi lại, bỏ sót hoặc sửa bài. Chưa đo số lần làm lại, tần suất, ảnh hưởng điểm hay số người gặp; chưa quy đổi thành số giờ tiết kiệm.                                                                                                                                                                                                                                                                                                                                    |
+| **Success Metric** (baseline → target, cách đo) | Baseline tạm: 20 phút/lần, đối chiếu 9 phút → mục tiêu tổng dưới 8 phút, phương án 4.2 dự kiến 7,5 phút. Bấm giờ từ mở bộ file đến checklist kiểm xong, gồm chờ công cụ và kiểm/sửa; thời gian hỏi làm rõ cũng phải ghi. Chất lượng: 0 yêu cầu quan trọng bị thiếu, 0 mục sai/vô căn cứ được duyệt, 100% mục đã duyệt có nguồn đúng. Reviewer lập danh sách chuẩn độc lập trước đánh giá; so sánh quy trình cũ, No AI và Rule/Workflow trên bộ tương đương, ghi số file, độ dài, độ khó và mức quen thuộc. Chưa có kết quả xác nhận các target. |
+| **Boundary**                                    | Chỉ tìm yêu cầu/lập checklist từ bộ tài liệu được phép dùng, đúng phiên bản; không viết, chấm hay nộp bài hộ. AI không tạo quy định, biến ví dụ thành bắt buộc hoặc tự giải quyết mâu thuẫn. Thiếu nguồn/file phải báo, mục chưa rõ giữ trạng thái chờ xác nhận; không coi checklist đã sẵn sàng nếu còn yêu cầu quan trọng chưa rõ. Sinh viên kiểm trước khi dùng; lỗi hoặc không có lợi thì quay về tìm kiếm và checklist thủ công.                                                                                                           |
+| **AI intervention point**                       | Nếu đủ điều kiện thử Workflow: bước 3 của 4.2, trích nháp yêu cầu và nguồn từ văn bản đã được Rule kiểm đọc được. AI không tự tìm thêm nguồn hay tự duyệt; bước 4 vẫn do sinh viên kiểm cả tính đúng và tính đầy đủ. Với phương án No AI/Rule, không có điểm can thiệp AI.                                                                                                                                                                                                                                                                      |
+| **Mức chọn**                                    | Workflow là phương án thử có AI, chưa phải mức triển khai được nhóm chốt. Bắt đầu No AI; thử Rule rồi Workflow khi có bằng chứng mức dưới chưa đủ. Không chọn Agent vì luồng và phạm vi nguồn đã xác định.                                                                                                                                                                                                                                                                                                                                      |
+| **Rủi ro & người kiểm tra**                     | AI bỏ sót/bịa/diễn giải sai; nguồn cũ, thiếu file hoặc link sai; kiểm nháp lâu; người học tin nháp mà không đọc nguồn. Sinh viên kiểm từng mục và quét rubric/hướng dẫn nộp độc lập; reviewer do nhóm phân công lập danh sách chuẩn, đếm lỗi và ghi thời gian; giảng viên/người phụ trách giải quyết mâu thuẫn. Vai trò reviewer chưa gán cho cá nhân cụ thể, phải phân công trước phép thử.                                                                                                                                                    |
 
 **Thay đổi so với v0 và lý do:**
 
-| Trường | v0  | v1  | Vì sao đổi |
-| ------ | --- | --- | ---------- |
-|        |     |     |            |
+| Trường                           | v0                                                                                 | v1                                                                                      | Vì sao đổi                                                                                     |
+| -------------------------------- | ---------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| Actor, Bottleneck, Impact        | Phạm vi báo cáo cá nhân; 20/9 phút là ước lượng.                                   | Giữ nguyên phạm vi và trạng thái số liệu; nhấn mạnh cần quan sát từng bước.             | CP4 chưa bổ sung bằng chứng để đổi actor, nguyên nhân hoặc impact.                             |
+| Quy trình / Success Metric       | Có phương án thủ công và AI để so sánh; dưới 8 phút và chất lượng kiểm theo nguồn. | Làm rõ thứ tự thử No AI → Rule → Workflow và tính cả thời gian kiểm/sửa, chờ làm rõ.    | Tránh chọn AI trước khi biết cách đơn giản đã đủ hay chưa; tránh đo riêng thời gian sinh nháp. |
+| Boundary                         | Không làm bài hộ, không bịa/giải quyết mâu thuẫn; con người duyệt.                 | Giữ nguyên, làm rõ mục quan trọng chưa xác nhận ngăn checklist được coi là sẵn sàng.    | Tránh coi đầu ra có đủ ô là đã đúng và đủ nội dung.                                            |
+| AI intervention point / Mức chọn | Chưa có trường riêng, chưa chốt cần AI.                                            | Thêm điểm trích nháp ở bước 3 và Workflow thử có điều kiện; không chọn Agent.           | Xác định chính xác AI làm gì và điều kiện được phép nâng mức.                                  |
+| Rủi ro & người kiểm tra          | Rủi ro nằm trong boundary và cách đo.                                              | Tách vai trò sinh viên, reviewer, người phụ trách; chưa giả định đã có người nhận việc. | Làm rõ ai phát hiện/sửa lỗi và ai giải quyết yêu cầu mâu thuẫn.                                |
 
 **Tiêu chí đánh giá đầu ra của AI (3–5 tiêu chí):**
 
-|   # | Tiêu chí | Đạt khi | Không đạt khi |
-| --: | -------- | ------- | ------------- |
-|   1 |          |         |               |
-|   2 |          |         |               |
-|   3 |          |         |               |
+|   # | Tiêu chí                               | Đạt khi                                                                                                                                                                       | Không đạt khi                                                                                                             |
+| --: | -------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+|   1 | Đủ yêu cầu quan trọng                  | Có đủ 100% yêu cầu quan trọng mà reviewer đã đánh dấu trong danh sách chuẩn từ toàn bộ nguồn trước phép thử; ghi riêng số mục ít quan trọng còn thiếu.                        | Thiếu dù 1 yêu cầu quan trọng về nội dung, tiêu chí chấm hoặc điều kiện nộp.                                              |
+|   2 | Đúng nội dung và phạm vi               | Mọi mục phản ánh đúng nguồn, phân biệt cá nhân/nhóm và bắt buộc/ví dụ; không thêm quy định, deadline hoặc tiêu chí tự suy ra.                                                 | Có mục vô căn cứ, sai nghĩa, sai phạm vi hoặc coi ví dụ là yêu cầu bắt buộc.                                              |
+|   3 | Truy lại nguồn đúng phiên bản          | 100% mục đã xác nhận có tên file, trang/mục và đoạn nguồn kiểm được, thuộc đúng bộ phiên bản dùng trong lượt thử.                                                             | Link/vị trí sai, không có đoạn hỗ trợ, dùng nguồn ngoài bộ hoặc nguồn cũ.                                                 |
+|   4 | Hiển thị thiếu dữ liệu và điểm chưa rõ | Với bộ thử có file thiếu/lỗi hoặc yêu cầu mâu thuẫn/mơ hồ, đầu ra báo rõ, giữ các nguồn liên quan và trạng thái chờ xác nhận; không tự kết luận đã đủ.                        | Im lặng bỏ mục, báo đã xử lý đủ khi thiếu nguồn hoặc tự chọn cách hiểu mà không có xác nhận.                              |
+|   5 | Kiểm được và duyệt được trước khi dùng | Checklist có đầu việc, điều kiện hoàn thành, phạm vi, nguồn và trạng thái; người học ghi nhận đã rà nguồn độc lập, mọi mục quan trọng đã được làm rõ trước khi dùng bản cuối. | Chỉ có tóm tắt chung, thiếu trường cần kiểm, chưa rà mục bị bỏ sót hoặc dùng bản cuối khi yêu cầu quan trọng vẫn chưa rõ. |
 
 ---
 
